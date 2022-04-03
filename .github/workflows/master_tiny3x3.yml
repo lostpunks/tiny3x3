@@ -23,6 +23,7 @@ jobs:
 
       - name: npm install, build, and test
         run: |
+          rm -rf node_modules
           npm install
           npm run build --if-present
           npm run test --if-present
@@ -30,7 +31,7 @@ jobs:
       - name: Zip artifact for deployment
         run: |
           echo "DEBUG"
-          ls /home/runner/work/tiny3x3/tiny3x3/node_modules/react-scripts/scripts
+          ls node_modules/react-scripts/scripts
           zip release.zip ./* -r
 
       - name: Upload artifact for deployment job
@@ -56,7 +57,7 @@ jobs:
         run: |
           unzip release.zip
           echo "DEBUG"
-          ls /home/runner/work/tiny3x3/tiny3x3/node_modules/react-scripts/scripts
+          ls node_modules/react-scripts/scripts
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
