@@ -52,18 +52,6 @@ const App = () => {
   let buttons;
   if (userAddress) {
     buttons = (
-    // <ConnectButton
-    //   Tezos={Tezos}
-    //   setContract={setContract}
-    //   setPublicToken={setPublicToken}
-    //   setWallet={setWallet}
-    //   setUserAddress={setUserAddress}
-    //   setUserBalance={setUserBalance}
-    //   setStorage={setStorage}
-    //   contractAddress={contractAddress}
-    //   setBeaconConnection={setBeaconConnection}
-    //   wallet={wallet}
-    // />
     <div className="buttons">
       <UpdateContract
         contract={contract}
