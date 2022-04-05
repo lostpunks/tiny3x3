@@ -47,7 +47,7 @@ const ConnectButton = ({
     setContract(contract);
     const tokenId = storage.token_id.toNumber();
     console.log((tokenId - 1) + "/100 tokens minted.")
-    setStorage(tokenId);
+    setStorage(tokenId - 1);
   };
 
   const connectWallet = async (): Promise<void> => {
@@ -114,25 +114,11 @@ const ConnectButton = ({
   }, []);
 
   return (
-    <div className="buttons">
-      <button className="button" onClick={connectWallet}>
-        <span>
-          <i className="fas fa-wallet"></i>&nbsp; Connect with wallet
-        </span>
-      </button>
-      <button className="button" disabled={loadingNano} onClick={connectNano}>
-        {loadingNano ? (
-          <span>
-            <i className="fas fa-spinner fa-spin"></i>&nbsp; Loading, please
-            wait
-          </span>
-        ) : (
-          <span>
-            <i className="fab fa-usb"></i>&nbsp; Connect with Ledger Nano
-          </span>
-        )}
-      </button>
-    </div>
+    <button className="button" onClick={connectWallet}>
+      <span>
+        <strong>sync</strong>
+      </span>
+    </button>
   );
 };
 

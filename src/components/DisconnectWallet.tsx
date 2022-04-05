@@ -39,9 +39,9 @@ const DisconnectButton = ({
   };
 
   return (
-    <div className="buttons">
+    <div className="warning">
       <button className="button" onClick={disconnectWallet}>
-        <i className="fas fa-times"></i>&nbsp; Disconnect wallet
+        <strong>unsync</strong>
       </button>
     </div>
   );
