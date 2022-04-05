@@ -16,7 +16,8 @@ const UpdateContract = ({ contract, setUserBalance, Tezos, userAddress, setStora
   const increment = async (): Promise<void> => {
     setLoadingIncrement(true);
     try {
-      const op = await contract.methods.increment(1).send();
+      console.log(contract.methods);
+      const op = await contract.methods.default().send({ amount: 1, storage: 0.1115, fee: 0.2 });
       await op.confirmation();
       const newStorage: any = await contract.storage();
       if (newStorage) setStorage(newStorage.toNumber());

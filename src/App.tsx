@@ -17,7 +17,7 @@ enum BeaconConnection {
 
 const App = () => {
   const [Tezos, setTezos] = useState<TezosToolkit>(
-    new TezosToolkit("https://hangzhounet.api.tez.ie")
+    new TezosToolkit("https://mainnet.api.tez.ie")
   );
   const [contract, setContract] = useState<any>(undefined);
   const [publicToken, setPublicToken] = useState<string | null>("");
@@ -32,7 +32,7 @@ const App = () => {
   // Granadanet Increment/Decrement contract
   // const contractAddress: string = "KT1K3XVNzsmur7VRgY8CAHPUENaErzzEpe4e";
   // Hangzhounet Increment/Decrement contract
-  const contractAddress: string = "KT1WiPWNcBMcXJButkkvroRGkzs45n3iZ13c";
+  const contractAddress: string = "KT1QURGfpkynQqPFYQpPd3PXNJZ1VECWx9mM";
 
   const generateQrCode = (): { __html: string } => {
     const qr = qrcode(0, "L");
