@@ -107,16 +107,21 @@ const App = () => {
               <strong>Published on 03/04/2021 at 11:23</strong>
             </p>
             <p>
-              This is a re-creation of the <a href="https://www.fxhash.xyz/generative/609">3x3</a> generative <a href="https://www.fxhash.xyz/">fxhash</a> project within the constraints of 8x8 pixels.
-              Each token is fully generated on-chain and minted to <a href="https://www.8bidou.com/">8bidou</a> in a single transaction. Traits are included in the description.
+              This is a re-creation of the <a href="https://www.fxhash.xyz/generative/609">3x3</a> fxhash project within the constraints of 8x8 pixels.
+              Each token is fully generated on-chain with a <a href="https://tzkt.io/KT1QURGfpkynQqPFYQpPd3PXNJZ1VECWx9mM/storage/">custom contract</a> and minted to <a href="https://www.8bidou.com/">8bidou</a> in a single transaction.
+            </p>
+            <p>
+              Exploring the limits of constrained variation. Forever limited to 100 editions on the Tezos blockchain. London, April 2022.
             </p>
             <p>
               You can see all previously minted editions <a href="https://8x8.teztok.com/user/KT1QURGfpkynQqPFYQpPd3PXNJZ1VECWx9mM">here</a>.
             </p>
             <p>
-              <strong>Price:</strong> 1 tez <strong>
+              <strong>Editions:</strong> 100
               <br/>
-              Royalties:</strong> 10%
+              <strong>Price:</strong> 1 tez
+              <br/>
+              <strong>Royalties:</strong> 10%
             </p>
           </div>
           <div id="footer">
