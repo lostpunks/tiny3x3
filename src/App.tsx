@@ -114,7 +114,7 @@ const App = () => {
               Exploring the limits of constrained variation. Forever limited to 100 editions on the Tezos blockchain. London, April 2022.
             </p>
             <p>
-              You can see all previously minted editions <a href="https://8x8.teztok.com/user/KT1QURGfpkynQqPFYQpPd3PXNJZ1VECWx9mM">here</a>.
+              You can see all previously minted editions <a href="https://8bidou.clxn.art/?address=KT1QURGfpkynQqPFYQpPd3PXNJZ1VECWx9mM&p=profile#page-top">here</a>.
             </p>
             <p>
               <strong>Editions:</strong> 100
